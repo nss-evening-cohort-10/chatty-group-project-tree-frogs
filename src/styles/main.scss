@@ -1,5 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-  background-color: black;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:rgb(207, 193, 193);
+
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .logo-image{
+    width: 175px;
+    height: 100px;
+    margin-bottom: 0px;
+  }
 }
