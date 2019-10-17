@@ -10,9 +10,17 @@
     padding: 0px;
   }
 
-  .logo-image{
+  .light-logo {
     width: 175px;
     height: 100px;
     margin-bottom: 0px;
   }
+
+  .dark-logo {
+    width: 175px;
+    height: 100px;
+    margin-bottom: 0px;
+    display: none;
+  }
+    
 }
