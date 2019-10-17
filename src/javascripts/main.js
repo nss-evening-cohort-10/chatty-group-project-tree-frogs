@@ -1,4 +1,9 @@
 import 'bootstrap';
 import '../styles/main.scss';
+import m from './components/messages/messages';
 
-console.error('hi');
+const init = () => {
+  m.printMessages();
+};
+
+init();
