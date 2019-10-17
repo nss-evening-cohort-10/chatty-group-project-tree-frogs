@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -23,4 +24,21 @@
     display: none;
   }
     
+body {
+  background-color: black;
 }
+
+#message-box-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#message-display {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 600px;
+  background-color: white;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
