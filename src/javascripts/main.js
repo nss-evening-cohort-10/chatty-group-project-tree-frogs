@@ -6,7 +6,7 @@ import '../styles/main.scss';
 
 const init = () => {
   dark.printDarkCheckbox();
-  dark.activateDarkMode();
+  dark.checkDarkMode();
   m.printMessages();
 };
 
