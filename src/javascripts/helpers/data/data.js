@@ -3,7 +3,7 @@ const chattyData = [
     id: 'chatty1',
     name: 'chatty1',
     message: 'Hello from chatty1',
-    imageUrl: 'https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/300_still-frame-550x289.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Batman_%28black_background%29.jpg',
   },
   {
     id: 'chatty2',
