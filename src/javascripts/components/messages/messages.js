@@ -39,4 +39,4 @@ const messageEventListeners = () => {
   $('#clearChat').click(clearMessages);
 };
 
-export default { printMessages, messageEventListeners, clearMessages };
+export default { printMessages, messageEventListeners };
