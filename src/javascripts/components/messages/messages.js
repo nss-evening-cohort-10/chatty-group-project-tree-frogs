@@ -9,7 +9,7 @@ const printMessages = () => {
   let domString = '';
   const chatters = data.getChattyData();
   chatters.forEach((chatter) => {
-    domString += '<div id="message-container2">';
+    domString += "<div id='message-container2'>";
     domString += `<div class="chat right">${chatter.message}</div>`;
     domString += '</div>';
     domString += '<div id="message-container">';
