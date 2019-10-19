@@ -13,10 +13,12 @@ const printDarkCheckbox = () => {
   utilities.printToDom('dark-mode-checkbox', domString);
 };
 
-const checkDarkMode = () => {
+const activateDarkMode = () => {
   $('body').css('background-color', 'black');
   $('.navbar').css('background-color', 'gray');
   $('.navbar').css('color', 'white');
+  $('#message-display').css('background-color', 'darkgray');
+  $('.custom-control-label').css('color', 'white');
   $('.dark-logo').toggle();
   $('.light-logo').toggle();
 };
@@ -24,19 +26,21 @@ const checkDarkMode = () => {
 const activateLightMode = () => {
   $('body').css('background-color', 'white');
   $('.navbar').css('background-color', 'rgb(207, 193, 193)');
+  $('#message-display').css('background-color', 'white');
+  $('.custom-control-label').css('color', 'black');
   $('.navbar').css('color', 'white');
   $('.light-logo').toggle();
   $('.dark-logo').toggle();
 };
 
-const activateDarkMode = () => {
+const checkDarkMode = () => {
   $('input[type=checkbox]').click(() => {
     if ($('input[type=checkbox]').is(':checked')) {
-      checkDarkMode();
+      activateDarkMode();
     } else if ($('input:not(:checked')) {
       activateLightMode();
     }
   });
 };
 
-export default { printDarkCheckbox, activateDarkMode };
+export default { printDarkCheckbox, checkDarkMode };

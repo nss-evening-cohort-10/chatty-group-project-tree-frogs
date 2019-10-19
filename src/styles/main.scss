@@ -24,10 +24,9 @@
     margin-bottom: 0px;
     display: none;
   }
-    
-body {
-  background-color: black;
-}
+  
+
+  
 
 #message-box-container {
   display: flex;
@@ -39,6 +38,9 @@ body {
   flex-direction: column-reverse;
   height: 600px;
   background-color: white;
+  border-style: solid;
+  border-color: black;
   align-items: flex-end;
   border-radius: 10px;
 }
+ 
