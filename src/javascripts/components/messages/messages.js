@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
 import './messages.scss';
@@ -23,19 +24,21 @@ const printMessages = () => {
 
 // will need to add clearMessages to export. I also need a chat builder to use this function.
 
-// Large Text
-$('#largeText').change(() => {
-  if ($(this).is(':checked')) {
-    $('body').addClass('largeText');
-  } else {
-    $('body').removeClass('largeText');
-  }
-});
+// // Large Text
+// $('#largeText').change(() => {
+//   if ($(this).is(':checked')) {
+//     $('body').addClass('largeText');
+//   } else {
+//     $('body').removeClass('largeText');
+//   }
+// });
 
-const messageEventListeners = () => {
-  $('#increaseSize').click(() => {
-    $('#message-display').toggleClass('largeText');
-  });
-};
+// const messageEventListeners = () => {
+//   $('#increaseSize').click(() => {
+//     $('#message-display').1111111111111('largeText');
+//   });
+// };
 
-export default { printMessages, messageEventListeners };
+// will need to add messageEventListeners to export
+
+export default { printMessages };
