@@ -11,7 +11,7 @@ const init = () => {
   m.printMessages();
   newM.printNewMessage();
   // m.clearMessages();
-  // m.messageEventListeners();
+  m.messageEventListeners();
 };
 
 init();

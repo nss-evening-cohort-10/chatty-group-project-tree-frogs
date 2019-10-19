@@ -1,9 +1,7 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
 import './messages.scss';
-
-// let messages = [];
 
 const printMessages = () => {
   let domString = '';
@@ -21,29 +19,24 @@ const printMessages = () => {
 };
 
 // // Clearing Messages
-// const clearMessages = () => {
-//   messages = [];
-//   printMessages();
-// };
-
-// will need to add clearMessages to export. I also need a chat builder to use this function.
+const clearMessages = () => {
+  $('#message-display').empty();
+};
 
 // Large Text
-// $('#largeText').change(() => {
-//   if ($(this).is(':checked')) {
-//     $('body').addClass('largeText');
-//   } else {
-//     $('body').removeClass('largeText');
-//   }
-// });
+$('#largeText').change(() => {
+  if ($(this).is(':checked')) {
+    $('body').addClass('largeText');
+  } else {
+    $('body').removeClass('largeText');
+  }
+});
 
-// const messageEventListeners = () => {
-//   $('#increaseSize').click(() => {
-//     $('#message-display').toggleclass('largeText');
-//   });
-// };
-// need to use inscreaseSize in
+const messageEventListeners = () => {
+  $('#largeTextC').click(() => {
+    $('#message-display').toggleClass('largeText');
+  });
+  $('#clearChat').click(clearMessages);
+};
 
-// will need to add messageEventListeners to export
-
-export default { printMessages };
+export default { printMessages, messageEventListeners, clearMessages };
