@@ -5,7 +5,7 @@ import './darkMode.scss';
 const printDarkCheckbox = () => {
   const domString = `
   <div class="darkMode d-flex justify-content-center">
-  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <input type="checkbox" class="custom-control-input" id="customCheck1" name="darkMode">
   <label class="custom-control-label" for="customCheck1">Activate Dark Mode</label>
   </div>
   </div>
@@ -34,8 +34,8 @@ const activateLightMode = () => {
 };
 
 const checkDarkMode = () => {
-  $('input[type=checkbox]').click(() => {
-    if ($('input[type=checkbox]').is(':checked')) {
+  $('input:checkbox[name=darkMode]').click(() => {
+    if ($('input:checkbox[name=darkMode]').is(':checked')) {
       activateDarkMode();
     } else if ($('input:not(:checked')) {
       activateLightMode();

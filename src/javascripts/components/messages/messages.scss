@@ -14,6 +14,7 @@
 
 
 
+
   .chat {
     width: 100%;
     padding: .5em .5em .5em .5em;
@@ -38,6 +39,7 @@
     left: 0;
     transform: translateX(-100%);
     background: radial-gradient(circle at 0 0, transparent, transparent 72%, lightgray 72%);
+
   }
 
 
@@ -47,3 +49,9 @@
     background: radial-gradient(circle at 100% 0, transparent, transparent 72%, #007bff 72%);
     }
 }
+
+
+.largeText {
+  font-size: 1.2rem;
+}
+

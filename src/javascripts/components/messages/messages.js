@@ -3,12 +3,6 @@ import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
 import './messages.scss';
 
-// let messages = [];
-// const containerClass = () => {
-//   if ($('.chat').className === 'right') {
-//     $('#message-container').addClass('right');
-//   }
-// };
 
 const printMessages = () => {
   let domString = '';
@@ -27,12 +21,9 @@ const printMessages = () => {
 };
 
 // // Clearing Messages
-// const clearMessages = () => {
-//   messages = [];
-//   chatBuilder();
-// };
-
-// will need to add clearMessages to export. I also need a chat builder to use this function.
+const clearMessages = () => {
+  $('#message-display').empty();
+};
 
 // Large Text
 $('#largeText').change(() => {
@@ -44,9 +35,10 @@ $('#largeText').change(() => {
 });
 
 const messageEventListeners = () => {
-  $('#increaseSize').click(() => {
+  $('#largeTextC').click(() => {
     $('#message-display').toggleClass('largeText');
   });
+  $('#clearChat').click(clearMessages);
 };
 
 export default { printMessages, messageEventListeners };
