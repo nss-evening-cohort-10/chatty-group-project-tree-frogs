@@ -10,10 +10,9 @@ const printNewMessage = () => {
       const newMessage = $('#chatInput').val().toLowerCase();
       if (event.keyCode === 13 && ($('#batman') === `${d.userId}`)) {
         domString += `<div id="message-container2">
-        <div class='chat right> ${newMessage};
+        <div class='chat right> ${newMessage}
         </div>
-        </div>        
-        `;
+        </div>`;
       } else if (event.keyCode === 13 && ($('#joker') === `${d.userId}`)) {
         domString += `<div id="message-container">
         <div class='chat left'> ${newMessage}
@@ -24,10 +23,5 @@ const printNewMessage = () => {
   });
   utilities.printToDom('message-display', domString);
 };
-
-// const printNewMessage = () => {
-//   const newMessage = $('#chatInput').val();
-//   console.log(newMessage);
-// };
 
 export default { printNewMessage };
