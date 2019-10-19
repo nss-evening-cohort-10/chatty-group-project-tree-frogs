@@ -11,6 +11,7 @@ const init = () => {
   m.printMessages();
   t.leftTimeStamp();
   t.rightTimeStamp();
+  m.messageEventListeners();
 };
 
 init();
