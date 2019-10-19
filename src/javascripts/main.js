@@ -10,6 +10,8 @@ const init = () => {
   dark.checkDarkMode();
   m.printMessages();
   newM.printNewMessage();
+  // m.clearMessages();
+  // m.messageEventListeners();
 };
 
 init();
