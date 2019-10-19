@@ -8,4 +8,40 @@
   border-radius: 15px;
   padding: .25em .75em;
   margin: 1em;
+  transform: translateX(-100%);
+  background: radial-gradient(circle at 0 0, transparent, transparent 72%, rgb(51, 117, 202) 72%);
+  left: 0;
+  
+}
+
+.chat {
+  width: 50%;
+  height: 75px;
+  margin: 1em auto;
+  border-radius: 12px;
+  background: darkseagreen;
+  position: relative;
+}
+.left {
+  border-bottom-left-radius: 0;
+}
+.right {
+  border-bottom-right-radius: 0;
+}
+.chat::after {
+  content: '';
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  bottom: 0;
+}
+.left::after {
+  left: 0;
+  transform: translateX(-100%);
+  background: radial-gradient(circle at 0 0, transparent, transparent 72%, darkseagreen 72%);
+}
+.right::after {
+  right: 0;
+  transform: translateX(100%);
+  background: radial-gradient(circle at 100% 0, transparent, transparent 72%, darkseagreen 72%);
 }
