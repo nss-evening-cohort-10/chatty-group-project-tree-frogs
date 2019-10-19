@@ -23,12 +23,12 @@ const printMessages = () => {
 // // Clearing Messages
 // const clearMessages = () => {
 //   messages = [];
-//   chatBuilder();
+//   printMessages();
 // };
 
 // will need to add clearMessages to export. I also need a chat builder to use this function.
 
-// // Large Text
+// Large Text
 // $('#largeText').change(() => {
 //   if ($(this).is(':checked')) {
 //     $('body').addClass('largeText');
@@ -39,9 +39,10 @@ const printMessages = () => {
 
 // const messageEventListeners = () => {
 //   $('#increaseSize').click(() => {
-//     $('#message-display').1111111111111('largeText');
+//     $('#message-display').toggleclass('largeText');
 //   });
 // };
+// need to use inscreaseSize in
 
 // will need to add messageEventListeners to export
 
