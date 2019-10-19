@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
 import './messages.scss';
