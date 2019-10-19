@@ -4,74 +4,46 @@
 }
 
 #message-display {
-  display: flex;
-  flex-direction: column-reverse;
+  
   height: 600px;
   background-color: white;
   border-style: solid;
   border-color: black;
-  align-items: flex-end;
   border-radius: 10px;
   padding-bottom: 1em;
 
-  #message-container {
-    background-color: white;
-    border-radius: 10px;
-    // margin-right: 75%;
+
+
+  .chat {
+    width: 100%;
+    padding: .5em .5em .5em .5em;
+    border-radius: 12px;
+    margin: 20px 0;
+    position: relative;
+    
   }
 
-  
-
-}
-
-
-
-.chat {
-  width: 100%;
-  height: 100%;
-  margin: 1em auto;
-  padding: .5em .5em .5em .5em;
-  border-radius: 12px;
-  position: relative;
-  // text-align: center;
-}
-  .left {
+    .col-6 .chat{
     border-bottom-left-radius: 0;
     background-color: lightgray;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 225px;
   }
-  .right {
+  .offset-6 .chat {
     border-bottom-right-radius: 0;
+    border-bottom-left-radius: 12px;
     background-color: #007BFF;
     color: white;
-    width: 225px;
-    flex-direction: row-reverse;
-  //  margin-left: 70%;
+  // //  margin-left: 70%;
   }
-
-.chat::after {
-  content: '';
-  width: 1.5em;
-  height: 1.5em;
-  position: absolute;
-  bottom: 0;
-}
-.left::after {
-  left: 0;
-  transform: translateX(-100%);
-  background: radial-gradient(circle at 0 0, transparent, transparent 72%, lightgray 72%);
-}
-.right::after {
-  right: 0;
-  transform: translateX(100%);
-  background: radial-gradient(circle at 100% 0, transparent, transparent 72%, #007bff 72%);
+  .chat::after {
+    left: 0;
+    transform: translateX(-100%);
+    background: radial-gradient(circle at 0 0, transparent, transparent 72%, lightgray 72%);
   }
 
 
-img {
-  height: 2em;
-  width: 2em;
+  .chat::after {
+    right: 0;
+    transform: translateX(100%);
+    background: radial-gradient(circle at 100% 0, transparent, transparent 72%, #007bff 72%);
+    }
 }
-
