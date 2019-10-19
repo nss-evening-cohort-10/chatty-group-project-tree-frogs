@@ -25,22 +25,7 @@
     display: none;
   }
   
-#message-box-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-#message-display {
-  display: flex;
-  flex-direction: column-reverse;
-  height: 600px;
-  background-color: white;
-  border-style: solid;
-  border-color: black;
-  align-items: flex-end;
-  border-radius: 10px;
-}
- 
 .largeText {
   font-size: 1.2rem;
 }
+
