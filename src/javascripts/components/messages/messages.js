@@ -4,18 +4,24 @@ import data from '../../helpers/data/data';
 import './messages.scss';
 
 // let messages = [];
+// const containerClass = () => {
+//   if ($('.chat').className === 'right') {
+//     $('#message-container').addClass('right');
+//   }
+// };
 
 const printMessages = () => {
   let domString = '';
   const chatters = data.getChattyData();
   chatters.forEach((chatter) => {
-    domString += '<div id="message-container2">';
-    domString += `<div class="chat right">${chatter.message}</div>`;
+    domString += `<div id="message-container" class="${chatter.userId === 'batman' ? 'right' : 'left'}">`;
+    domString += `<div class="chat ${chatter.userId === 'batman' ? 'right' : 'left'}" >${chatter.message}</div>`;
     domString += '</div>';
-    domString += '<div id="message-container">';
-    domString += `<div class="chat left">${chatter.message}</div>`;
+    // domString += '<div id="message-container">';
+    // domString += `<div class="chat left">${chatter.message}</div>`;
     // domString += `<div class="output"><img src="${chatter.imageUrl}">${chatter.message}</div>`;
-    domString += '</div>';
+    // domString += '</div>';
+    // containerClass();
   });
   utilities.printToDom('message-display', domString);
 };
