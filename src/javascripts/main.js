@@ -8,6 +8,8 @@ const init = () => {
   dark.printDarkCheckbox();
   dark.checkDarkMode();
   m.printMessages();
+  // m.clearMessages();
+  // m.messageEventListeners();
 };
 
 init();
