@@ -8,8 +8,10 @@ const printMessages = () => {
   let domString = '';
   const chatters = data.getChattyData();
   chatters.forEach((chatter) => {
+
     domString += `<div class="col-6 ${chatter.userId === 'batman' ? '' : 'offset-6'}">`;
     domString += `<div class="chat">${chatter.message}</div>`;
+
     domString += '</div>';
     // domString += '<div id="message-container">';
     // domString += `<div class="chat left">${chatter.message}</div>`;
