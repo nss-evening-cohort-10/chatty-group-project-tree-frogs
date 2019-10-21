@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/5984bb7326.js" crossorigin="anonymous"></script>
   <title>Dark Knight Chat Group</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
               </div>
             </div>
       </div>
-      <input class="form-control col-5" id="chatInput" type="text" placeholder="Type your message in here..." aria-label="Chat Input Box">
+      <input class="form-control col-5" id="chatInput" type="text" placeholder="Type your message in here..." data-emojiable="true" data-emoji-input="unicode" aria-label="Chat Input Box"><div id="emoji"></div>
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Who are you?
@@ -46,7 +47,7 @@
   <div id="message-box-container">
     <div id="message-display" class="col-7"></div>
   </div>
-  
+  <div id='e-box'></div>
 
 </body>
 </html>
