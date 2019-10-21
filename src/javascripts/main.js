@@ -14,6 +14,7 @@ const init = () => {
   t.leftTimeStamp();
   t.rightTimeStamp();
   m.messageEventListeners();
+  m.deleteSingleMessage();
 };
 
 init();
