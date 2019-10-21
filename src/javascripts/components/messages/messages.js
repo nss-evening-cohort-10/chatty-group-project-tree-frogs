@@ -6,18 +6,13 @@ import './messages.scss';
 
 const printMessages = () => {
   let domString = '';
+  let num = 0;
   const chatters = data.getChattyData();
   chatters.forEach((chatter) => {
-
-    domString += `<div class="col-6 ${chatter.userId === 'batman' ? '' : 'offset-6'}">`;
-    domString += `<div class="chat">${chatter.message}</div>`;
-
+    domString += `<div class="col-6 ${chatter.userId === 'joker' ? '' : 'offset-6'}">`;
+    domString += `<div id="message-${num += 1}" class="chat">${chatter.message}`;
+    domString += '<a href="#" class="card-link">delete</a></div>';
     domString += '</div>';
-    // domString += '<div id="message-container">';
-    // domString += `<div class="chat left">${chatter.message}</div>`;
-    // domString += `<div class="output"><img src="${chatter.imageUrl}">${chatter.message}</div>`;
-    // domString += '</div>';
-    // containerClass();
   });
   utilities.printToDom('message-display', domString);
 };
@@ -43,4 +38,23 @@ const messageEventListeners = () => {
   $('#clearChat').click(clearMessages);
 };
 
-export default { printMessages, messageEventListeners };
+
+// delete button
+const deleteLink = () => {
+  $('.card-link').hide();
+};
+
+const deleteSingleMessage = () => {
+  deleteLink();
+  $('.chat').hover(() => {
+    $('.card-link').show();
+    $('.card-link').click((e) => {
+      const message = e.target.closest('.chat');
+      message.remove();
+      deleteLink();
+    });
+  });
+};
+
+
+export default { printMessages, messageEventListeners, deleteSingleMessage };
