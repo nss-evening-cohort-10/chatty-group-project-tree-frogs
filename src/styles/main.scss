@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -28,8 +27,14 @@
 #customCheck1 {
   padding-left: 2px;
 }
+
+.custom-control-input {
+  padding: 5px;
+  margin: 5px;
+}
   
 .avatar {
   height: 40px;
   width: 40px;
+  padding: 5px;
 }
