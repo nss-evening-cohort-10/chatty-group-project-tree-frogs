@@ -5,8 +5,10 @@ import utilities from '../../helpers/utilities';
 const printBatman = () => {
   let domString = '';
   const newMessage = $('#chatInput').val().toLowerCase();
-  domString += newMessage;
-  utilities.printToDom('.col-6', domString);
+  domString += `<div class="chat">
+  <div class="col-6">${newMessage}</div>
+  </div>`;
+  utilities.printToDom('message-display', domString);
 };
 
 // const printJoker = () => {
