@@ -6,8 +6,15 @@ const printBatman = () => {
   let domString = '';
   const newMessage = $('#chatInput').val().toLowerCase();
   domString += newMessage;
-  utilities.printToDom('message-display', domString);
+  utilities.printToDom('.col-6', domString);
 };
+
+// const printJoker = () => {
+//   let domString = '';
+//   const newMessage = $('#chatInput').val().toLowerCase();
+//   domString += newMessage;
+//   utilities.printToDom('offset-6', domString);
+// };
 
 const printNewMessage = () => {
 //   let domString = '';
