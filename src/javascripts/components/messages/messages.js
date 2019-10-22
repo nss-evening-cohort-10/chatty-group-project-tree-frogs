@@ -18,14 +18,15 @@ const deleteSingleMessage = () => {
       deleteLink();
     });
   });
+  $('.chat').mouseleave(() => {
+    $('.card-link').hide();
+  });
 };
 
 const printMessages = () => {
   let domString = '';
   let num = 0;
   const chatters = data.getChattyData();
-  console.log(chatters);
-  // for (let i = 0; i < 20; i += 1) {
   chatters.forEach((chatter) => {
     domString += `<div class="col-6 ${chatter.userId === 'joker' ? '' : 'offset-6'}">`;
     domString += `<div id="message-${num += 1}" class="chat">${chatter.message}`;
