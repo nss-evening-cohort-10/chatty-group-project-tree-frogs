@@ -12,9 +12,6 @@
   border-radius: 10px;
   padding-bottom: 1em;
 
-
-
-
   .chat {
     width: 100%;
     padding: .5em .5em .5em .5em;
@@ -46,14 +43,12 @@
 
   }
 
-
   .chat::after {
     right: 0;
     transform: translateX(100%);
     background: radial-gradient(circle at 100% 0, transparent, transparent 72%, #007bff 72%);
     }
 }
-
 
 .largeText {
   font-size: 1.2rem;
