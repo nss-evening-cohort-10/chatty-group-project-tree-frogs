@@ -8,7 +8,7 @@ const animate = () => {
     $('#rightBatWing').animate({ left: '100%' }, 2000);
     setTimeout(() => {
       $('#leftBatWing').hide();
-      $('#righttBatWing').hide();
+      $('#rightBatWing').hide();
     }, 2000);
   });
 };
