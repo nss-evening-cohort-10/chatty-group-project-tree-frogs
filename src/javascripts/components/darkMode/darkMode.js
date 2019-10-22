@@ -29,7 +29,7 @@ const activateDarkMode = () => {
 
 const activateLightMode = () => {
   $('body').css({
-    'background-image': 'url(https://i.pinimg.com/originals/47/ee/ac/47eeacdac028ee5bb92573f9fa07e7d7.jpg)',
+    'background-image': 'url(http://fc09.deviantart.net/fs70/i/2013/153/6/d/batman_tattoo9_by_artfoundry-d67mp41.png)',
     'background-repeat': 'no-repeat',
     'background-size': 'cover',
   });
