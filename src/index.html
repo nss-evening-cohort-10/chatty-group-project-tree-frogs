@@ -22,7 +22,7 @@
       </div>
 
       <div id="emoji"></div><input class="form-control col-4" id="chatInput" type="text" placeholder="Type your message in here..." data-emojiable="true" data-emoji-input="unicode" aria-label="Chat Input Box">
-
+      <div class="avatarSelector custom-control-inline">
       <div class="custom-control custom-radio custom-control-inline">
         <input type="radio" id="batmanRadio" name="customRadioInline1" class="custom-control-input">
         <label class="custom-control-label" for="batmanRadio">Batman</label>
@@ -32,8 +32,8 @@
         <input type="radio" id="jokerRadio" name="customRadioInline1" class="custom-control-input">
         <label class="custom-control-label" for="jokerRadio">Joker</label>
         <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fd2sx9mrt4zumaq.cloudfront.net%2Fwp-content%2Fuploads%2F2014%2F11%2FJokerIcon-150x150.png" class="avatar">
-
       </div>
+    </div>
       <div class="col-3 d-flex justify-content-center align-items-center">
         <button class="btn btn-primary col-7" id="clearChat" type="button">Clear Chat</button>
       </div>
@@ -41,13 +41,14 @@
   </nav>
 
   <div class="overallCheckboxes row d-flex justify-content-around">
-    <div id="dark-mode-checkbox"></div>
+    <div id="dark-mode-checkbox" class="row d-flex justify-content-center"></div>
 
     <div class="largeText">
-    <div id="large-text-checkbox"></div>
+    <div id="large-text-checkbox">
       <input type="checkbox" class="custom-control-input" id="largeTextC">
       <label class="custom-control-label" for="largeTextC">Large Text</label>
       </div>
+  </div>
   </div>
   
   <div id="message-box-container">

@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-image: url(https://i.pinimg.com/originals/47/ee/ac/47eeacdac028ee5bb92573f9fa07e7d7.jpg);
+  background-image: url(http://fc09.deviantart.net/fs70/i/2013/153/6/d/batman_tattoo9_by_artfoundry-d67mp41.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,17 +30,24 @@ body {
     display: none;
   }
 
+.custom-control-label {
+  font-size: 20px;
+}
+
 #customCheck1 {
   padding-left: 2px;
 }
 
-// .custom-control-input {
-//   padding: 5px;
-//   margin: 5px;
-// }
+.overallCheckboxes {
+  padding: 10px;
+}
   
 .avatar {
   height: 40px;
   width: 40px;
+  padding: 5px;
+}
+
+.avatarSelector {
   padding: 5px;
 }

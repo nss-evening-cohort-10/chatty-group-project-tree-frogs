@@ -18,6 +18,7 @@ const addMessage = () => {
       console.log('pushed joker');
       data.setData(newChattyData);
       console.log(d.length);
+      $('#chatInput').val('');
       // m.printMessages();
     } else if (e.keyCode === 13 && $('#batmanRadio').is(':checked')) {
       const newMessage = $('#chatInput').val().toLowerCase();
@@ -27,6 +28,7 @@ const addMessage = () => {
       console.log('pushed batman');
       data.setData(newChattyData);
       console.log(d.length);
+      $('#chatInput').val('');
       // m.printMessages();
     }
     m.printMessages();
