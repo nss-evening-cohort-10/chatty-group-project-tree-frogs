@@ -17,6 +17,7 @@ const printMessages = () => {
   utilities.printToDom('message-display', domString);
 };
 
+
 // // Clearing Messages
 const clearMessages = () => {
   $('#message-display').empty();
