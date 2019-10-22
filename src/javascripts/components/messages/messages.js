@@ -1,13 +1,31 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
+import time from '../timeStamp/timeStamp';
 import './messages.scss';
 
+const deleteLink = () => {
+  $('.card-link').hide();
+};
+
+const deleteSingleMessage = () => {
+  deleteLink();
+  $('.chat').hover(() => {
+    $('.card-link').show();
+    $('.card-link').click((e) => {
+      const message = e.target.closest('.chat');
+      message.remove();
+      deleteLink();
+    });
+  });
+};
 
 const printMessages = () => {
   let domString = '';
   let num = 0;
   const chatters = data.getChattyData();
+  console.log(chatters);
+  // for (let i = 0; i < 20; i += 1) {
   chatters.forEach((chatter) => {
     domString += `<div class="col-6 ${chatter.userId === 'joker' ? '' : 'offset-6'}">`;
     domString += `<div id="message-${num += 1}" class="chat">${chatter.message}`;
@@ -15,6 +33,8 @@ const printMessages = () => {
     domString += '</div>';
   });
   utilities.printToDom('message-display', domString);
+  deleteSingleMessage();
+  time.rightTimeStamp();
 };
 
 
@@ -39,23 +59,4 @@ const messageEventListeners = () => {
   $('#clearChat').click(clearMessages);
 };
 
-
-// delete button
-const deleteLink = () => {
-  $('.card-link').hide();
-};
-
-const deleteSingleMessage = () => {
-  deleteLink();
-  $('.chat').hover(() => {
-    $('.card-link').show();
-    $('.card-link').click((e) => {
-      const message = e.target.closest('.chat');
-      message.remove();
-      deleteLink();
-    });
-  });
-};
-
-
-export default { printMessages, messageEventListeners, deleteSingleMessage };
+export default { printMessages, messageEventListeners };
