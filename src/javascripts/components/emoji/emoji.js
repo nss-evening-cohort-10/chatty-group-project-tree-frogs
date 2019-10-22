@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utilities';
+// import m from '../messages/messages';
 
 const emojis = ['❤️', '😂', '🥺', '🔥', '😍', '😊', '🥰', '👍', '🤔', '💩'];
 
@@ -19,11 +20,9 @@ const printEmojis = () => {
 
 const selectEmoji = () => {
   $('.dropdown-item').click((e) => {
-    const selectedEmoji = e.target;
-    const em = emojis.codePointAt(selectedEmoji);
-    // domString += `${selectedEmoji}`;
-    // const output = $('#chatInput').val($('#chatInput').val() + selectedEmoji.html());
-    utilities.printToDom('chatInput', em);
+    let value = e.target.innerHTML;
+    $('#chatInput').val(value += $('#chatInput').val());
   });
 };
+
 export default { printEmojis, selectEmoji };
