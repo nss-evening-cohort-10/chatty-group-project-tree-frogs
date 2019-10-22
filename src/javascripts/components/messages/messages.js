@@ -60,4 +60,3 @@ const messageEventListeners = () => {
 };
 
 export default { printMessages, messageEventListeners };
-
