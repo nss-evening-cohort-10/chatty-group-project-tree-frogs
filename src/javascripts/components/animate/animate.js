@@ -2,8 +2,8 @@ import $ from 'jquery';
 import './animate.scss';
 
 const animate = () => {
+  console.log('i click');
   $('body').click(() => {
-    console.log('i click');
     $('#leftBatWing').animate({ right: '100%' }, 2000);
     $('#rightBatWing').animate({ left: '100%' }, 2000);
     setTimeout(() => {

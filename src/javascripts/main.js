@@ -16,7 +16,7 @@ const init = () => {
   // t.leftTimeStamp();
   // t.rightTimeStamp();
   m.messageEventListeners();
-  m.deleteSingleMessage();
+  // m.deleteSingleMessage();
   a.animate();
   e.printEmojis();
   e.selectEmoji();
