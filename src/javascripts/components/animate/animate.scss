@@ -1,0 +1,26 @@
+
+body {
+position: relative;
+}
+
+
+.batWings {
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 1000;
+height: 100%;
+width: 100%;
+}
+
+#leftBatWing {
+background-image: url("/src/assets/left-bat-wing1.png");
+height: 100%;
+width: 50%;
+}
+
+#rightBatWing {
+background-image: url("/src/assets/right-bat-wing1.png");
+height: 100%;
+width: 50%;
+}
