@@ -44,6 +44,7 @@ const setData = (chattyMessage) => {
 
 // const getChattyData = () => chattyData;
 
+// eslint-disable-next-line consistent-return
 const getChattyData = () => {
   if (chattyData.length > 20) {
     chattyData.slice(0, 21);
