@@ -1,8 +1,27 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import data from '../../helpers/data/data';
+import time from '../timeStamp/timeStamp';
 import './messages.scss';
 
+const deleteLink = () => {
+  $('.card-link').hide();
+};
+
+const deleteSingleMessage = () => {
+  deleteLink();
+  $('.chat').hover(() => {
+    $('.card-link').show();
+    $('.card-link').click((e) => {
+      const message = e.target.closest('.chat');
+      message.remove();
+      deleteLink();
+    });
+  });
+  $('.chat').mouseleave(() => {
+    $('.card-link').hide();
+  });
+};
 
 const printMessages = () => {
   let domString = '';
@@ -15,6 +34,8 @@ const printMessages = () => {
     domString += '</div>';
   });
   utilities.printToDom('message-display', domString);
+  deleteSingleMessage();
+  time.rightTimeStamp();
 };
 
 
@@ -39,23 +60,4 @@ const messageEventListeners = () => {
   $('#clearChat').click(clearMessages);
 };
 
-
-// delete button
-const deleteLink = () => {
-  $('.card-link').hide();
-};
-
-const deleteSingleMessage = () => {
-  deleteLink();
-  $('.chat').hover(() => {
-    $('.card-link').show();
-    $('.card-link').click((e) => {
-      const message = e.target.closest('.chat');
-      message.remove();
-      deleteLink();
-    });
-  });
-};
-
-
-export default { printMessages, messageEventListeners, deleteSingleMessage };
+export default { printMessages, messageEventListeners };

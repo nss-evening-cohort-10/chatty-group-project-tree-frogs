@@ -38,6 +38,18 @@ const chattyData = [
   },
 ];
 
-const getChattyData = () => chattyData;
+const setData = (chattyMessage) => {
+  chattyData.push(chattyMessage);
+};
 
-export default { getChattyData };
+// const getChattyData = () => chattyData;
+
+const getChattyData = () => {
+  if (chattyData.length > 20) {
+    chattyData.slice(0, 21);
+  } else if (chattyData.length < 20) {
+    return chattyData;
+  }
+};
+
+export default { getChattyData, setData };
