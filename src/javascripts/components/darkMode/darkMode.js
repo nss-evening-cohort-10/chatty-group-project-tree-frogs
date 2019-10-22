@@ -14,7 +14,11 @@ const printDarkCheckbox = () => {
 };
 
 const activateDarkMode = () => {
-  $('body').css('background-color', 'black');
+  $('body').css({
+    'background-image': 'url(https://www.candyscostumeshoponline.com/storefront/catalog/products/enlarged/original/EV011.jpg)',
+    'background-repeat': 'no-repeat',
+    'background-size': 'cover',
+  });
   $('.navbar').css('background-color', 'gray');
   $('.navbar').css('color', 'white');
   $('#message-display').css('background-color', 'darkgray');
@@ -24,7 +28,11 @@ const activateDarkMode = () => {
 };
 
 const activateLightMode = () => {
-  $('body').css('background-color', 'white');
+  $('body').css({
+    'background-image': 'url(https://www.publicdomainpictures.net/pictures/200000/t2/plain-white-background-1480544970glP.jpg)',
+    'background-repeat': 'no-repeat',
+    'background-size': 'cover',
+  });
   $('.navbar').css('background-color', 'rgb(207, 193, 193)');
   $('#message-display').css('background-color', 'white');
   $('.custom-control-label').css('color', 'black');
