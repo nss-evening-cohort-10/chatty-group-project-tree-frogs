@@ -38,6 +38,10 @@ const chattyData = [
   },
 ];
 
+const setData = (chattyMessage) => {
+  chattyData.push(chattyMessage);
+};
+
 const getChattyData = () => chattyData;
 
-export default { getChattyData };
+export default { getChattyData, setData };

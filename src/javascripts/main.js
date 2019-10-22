@@ -11,11 +11,11 @@ const init = () => {
   dark.printDarkCheckbox();
   dark.checkDarkMode();
   m.printMessages();
-  newM.printNewMessage();
-  t.leftTimeStamp();
-  t.rightTimeStamp();
+  newM.addMessage();
+  // t.leftTimeStamp();
+  // t.rightTimeStamp();
   m.messageEventListeners();
-  m.deleteSingleMessage();
+  // m.deleteSingleMessage();
   e.printEmojis();
   e.selectEmoji();
 };
