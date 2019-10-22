@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import m from './components/messages/messages';
 import dark from './components/darkMode/darkMode';
 import newM from './components/newMessages/newMessage';
@@ -17,7 +17,7 @@ const init = () => {
   t.rightTimeStamp();
   m.messageEventListeners();
   m.deleteSingleMessage();
-  $(document).ready(a.animate);
+  a.animate();
 };
 
 init();
