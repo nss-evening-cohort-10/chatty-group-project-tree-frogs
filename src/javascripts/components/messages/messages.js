@@ -55,6 +55,9 @@ const deleteSingleMessage = () => {
       deleteLink();
     });
   });
+  $('.chat').mouseleave(() => {
+    $('.card-link').hide();
+  });
 };
 
 
