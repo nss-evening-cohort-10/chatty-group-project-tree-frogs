@@ -19,6 +19,6 @@ const init = () => {
   $(document).ready(a.animate);
   e.printEmojis();
   e.selectEmoji();
- };
+};
 
 init();
