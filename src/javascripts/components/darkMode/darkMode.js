@@ -15,9 +15,9 @@ const printDarkCheckbox = () => {
 
 const activateDarkMode = () => {
   $('body').css({
-    'background-image': 'url(https://www.candyscostumeshoponline.com/storefront/catalog/products/enlarged/original/EV011.jpg)',
+    'background-image': 'url(https://rukminim1.flixcart.com/image/832/832/poster/h/t/8/batman-with-bats-poster-plo365-medium-original-imadzrfsjfjujphh.jpeg?q=70)',
     'background-repeat': 'no-repeat',
-    'background-size': 'cover',
+    'background-size': '100%',
   });
   $('.navbar').css('background-color', 'gray');
   $('.navbar').css('color', 'white');
@@ -29,7 +29,7 @@ const activateDarkMode = () => {
 
 const activateLightMode = () => {
   $('body').css({
-    'background-image': 'url(https://www.publicdomainpictures.net/pictures/200000/t2/plain-white-background-1480544970glP.jpg)',
+    'background-image': 'url(https://i.pinimg.com/originals/47/ee/ac/47eeacdac028ee5bb92573f9fa07e7d7.jpg)',
     'background-repeat': 'no-repeat',
     'background-size': 'cover',
   });

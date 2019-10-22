@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  background-image: url(https://i.pinimg.com/originals/47/ee/ac/47eeacdac028ee5bb92573f9fa07e7d7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -28,10 +34,10 @@
   padding-left: 2px;
 }
 
-.custom-control-input {
-  padding: 5px;
-  margin: 5px;
-}
+// .custom-control-input {
+//   padding: 5px;
+//   margin: 5px;
+// }
   
 .avatar {
   height: 40px;

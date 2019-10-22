@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/5984bb7326.js" crossorigin="anonymous"></script>
   <title>Dark Knight Chat Group</title>
 </head>
 <body>
@@ -24,16 +25,19 @@
               </div>
             </div>
       </div>
-      <input class="form-control col-5" id="chatInput" type="text" placeholder="Type your message in here..." aria-label="Chat Input Box">
+
+      <div id="emoji"></div><input class="form-control col-4" id="chatInput" type="text" placeholder="Type your message in here..." data-emojiable="true" data-emoji-input="unicode" aria-label="Chat Input Box">
+
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="batman" name="customRadioInline1" class="custom-control-input">
-        <label class="custom-control-label" for="batman">Batman</label>
+        <input type="radio" id="batmanRadio" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="batmanRadio">Batman</label>
         <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F323571%2Fscreenshots%2F5412611%2Fbatman_2x.jpg" class="avatar">
       </div>
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="joker" name="customRadioInline1" class="custom-control-input">
-        <label class="custom-control-label" for="joker">Joker</label>
+        <input type="radio" id="jokerRadio" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="jokerRadio">Joker</label>
         <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fd2sx9mrt4zumaq.cloudfront.net%2Fwp-content%2Fuploads%2F2014%2F11%2FJokerIcon-150x150.png" class="avatar">
+
       </div>
       <div class="col-3 d-flex justify-content-center align-items-center">
         <button class="btn btn-primary col-7" id="clearChat" type="button">Clear Chat</button>
@@ -54,6 +58,6 @@
   <div id="message-box-container">
     <div id="message-display" class="col-7"></div>
   </div>
-  
+
 </body>
 </html>
