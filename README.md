@@ -12,7 +12,9 @@ Noteable features and functionality include--in no particular order:
 ## Screenshots
 Display on page load:
 ![on load](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tree-frogs/master/src/screenshots/Chatty%20-%20Load%20Screen.png)
+Annimation on click:
 ![annimation on click](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tree-frogs/master/src/screenshots/Chatty%20-%20Animation.png)
+Dark Mode, Large Font and Emojis:
 ![dark mode, large font and emojis](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tree-frogs/master/src/screenshots/Chatty%20-%20Dark%20Mode%20-Large%20Text%20-%20Emoji.png)
 
 ## Installation & How to Run Instructions
