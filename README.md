@@ -10,18 +10,19 @@ Noteable features and functionality include--in no particular order:
 * Ability to clear all messages, scroll through messages, and delete a single message.  
 
 ## Screenshots
+Display on page load:
+![on load]()
+![annimation on click]()
+![dark mode, large font and emojis]()
 
-![alt text]()
-
-## Installation Instructions
-* Clone down this repo
-* at the root of the project run `npm install`
-
-## How to Run
-* In your terminal type `npm start`.
+## Installation & How to Run Instructions
+* Clone down this project from [Github](https://github.com/nss-evening-cohort-10/chatty-group-project-tree-frogs).
+* Install [http-server](https://www.npmjs.com/package/http-server) from npm.
+* At the root of this project, run the following command: `hs -p 8080`.
+* In your browser, navigate to `https://localhost:8080`;
 
 ## Authors
-* Denise Baker
-* Emilee Mitchell
-* Jamie Phillips 
-* Yitbarek Gitore 
+* [Denise Baker](https://github.com/denzelb5)
+* [Emilee Mitchell](https://github.com/emileea)
+* [Jamie Phillips](https://github.com/phillipsja97)
+* [Yitbarek Gitore](https://github.com/yitbarekgitore)
